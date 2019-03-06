@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Encrypt</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="algorithms">
+        <item >None</item>
+        <item >MD5</item>
+        <item >Hash</item>
+    </string-array>
+    
+    <string-array name="length">
+        <item >16</item>
+        <item >24</item>
+        <item >32</item>
+    </string-array>
+</resources>

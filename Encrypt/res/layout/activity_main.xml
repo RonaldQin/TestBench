@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText 
+        android:id="@+id/et_password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:hint="Password"/>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Algorithm: "/>
+	    <Spinner 
+	        android:id="@+id/sp_algorithm"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:entries="@array/algorithms"/>
+	    <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Length: "/>
+	    <Spinner 
+	        android:id="@+id/sp_length"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:entries="@array/length"/>
+        
+    </LinearLayout>
+
+    <Button 
+        android:id="@+id/btn_encrypt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Encrypt"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="encrypt"/>
+    
+    <Button 
+        android:id="@+id/btn_unencrypt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Unencrypt"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:onClick="unencrypt"/>
+    
+    <TextView 
+        android:id="@+id/tv_result"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text=""/>
+    
+</LinearLayout>
