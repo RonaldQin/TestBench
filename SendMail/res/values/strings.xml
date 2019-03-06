@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SendMail</string>
+
+    <string-array name="encrypt_mode">
+        <item>不加密邮件</item>
+        <item>加密邮件</item>
+    </string-array>
+
+    <string-array name="protocols">
+        <item>POP3/SMTP</item>
+        <item>IMAP/SMTP</item>
+    </string-array>
+</resources>

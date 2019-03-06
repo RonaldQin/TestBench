@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/et_toAddr"
+        android:hint="收件人邮箱地址"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/et_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="主题"
+        android:inputType="textEmailSubject"/>
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:hint="邮件内容"
+        android:inputType="textMultiLine"
+        android:gravity="left|top"/>
+
+
+    <EditText
+        android:id="@+id/et_phoneNum"
+        android:hint="收件人手机号码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <Spinner
+        android:id="@+id/sp_isEncrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/encrypt_mode"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:text="发送邮件"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="send"/>
+
+</LinearLayout>

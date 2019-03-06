@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<EditText
+        android:id="@+id/et_host"
+        android:hint="邮件服务器地址"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/et_fromAddr"
+        android:hint="发送方邮箱地址"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/et_authPwd"
+        android:hint="授权密码"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"/>
+
+    <!-- <Spinner
+        android:id="@+id/sp_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/protocols"/> -->
+        
+  	<EditText 
+  	    android:id="@+id/et_protocol"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="50dp"
+  	    android:hint="邮件协议"
+  	    android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/et_port"
+        android:hint="端口号"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确     定"
+        android:onClick="save"/>
+</LinearLayout>
